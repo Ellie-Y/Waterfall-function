@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 14px;
+    font-family: Helvetica;
+}
+
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+    /* border: 1px solid #ccc; */
+}
+
+.wrapper ul {
+    border: 1px solid transparent;
+}
+
+.wrapper ul li {
+    float: left;
+    width: 25%;
+}
+
+.item {
+    border: 1px solid #7a7a7a;
+    height: auto;
+    padding:10px;
+    margin: 10px;
+}
+
+.item img{
+    width: 100%;
+}
+
+.item p {
+    display: inline-block;
+    color: rgb(71, 71, 71);
+    height: auto;
+    vertical-align: middle;
+    margin-top: 5px;
+}
