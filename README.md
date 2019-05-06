@@ -1,5 +1,7 @@
 # Waterfall-function
 
-Json file is used to obtain data
+- **Json file is used to obtain data. Some urls of pictures in that file aren't working well**
+- **Needs to be opened under localhost**
 
-<img src="https://github.com/Ellie-Y/Waterfall-function/blob/master/Waterfall%20sample.gif" /><br/>
+<br/>
+<img src="https://github.com/Ellie-Y/Waterfall-function/blob/master/sample.gif" /><br/>

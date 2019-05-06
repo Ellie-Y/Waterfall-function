@@ -22,8 +22,8 @@
         });
     }
 
-    //查找最短的 li，返回最短 li的索引和高度
-    //如果最短的 li有两个，那么也只会插入到第一个 li里面
+    //To find the shortest length of 'li' label, and return the index and height
+    // Pitures will insert into the first 'li' label even though two equally shortest 'li' exsit
     function findMin() {
         var minLiIndex = 0;
         var minLiHeight = oLi.eq(0).height();
