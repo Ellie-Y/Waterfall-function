@@ -1,18 +1,9 @@
-/* 流程
- 1. 浏览器
- 2. ajax 对象
- 3. ajax.open(method, url, true)
- 4. ajax.send()
- 5. onreadystatechange -> 4
- 6. status == 200 (200是获取成功)
-*/
 
 function getDataByAjax(type, url, data, callback, flag){
-    var ajaxObj = null;  //用来存储和请求响应的信息
+    var ajaxObj = null;  
     if(window.XMLHttpRequest) {
         ajaxObj = new XMLHttpRequest();
     }else {
-        //兼容 ie
         ajaxObj = new ActiveXObject('Microsoft.XMLHttp');
     }
 
@@ -29,11 +20,10 @@ function getDataByAjax(type, url, data, callback, flag){
     // ajaxObj.open(type, url, flag);
     type = type.toUpperCase()
     if(type == 'POST') {
-        ajaxObj.open(type, url, flag);  //flag 是否异步
+        ajaxObj.open(type, url, flag);  
         ajaxObj.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
         ajaxObj.send(data);
     }else if(type == 'GET') {
-        //get请求里默认有setRequestHeader
         ajaxObj.open(type, url + '?' + data, flag);
         ajaxObj.send();
     }else {
